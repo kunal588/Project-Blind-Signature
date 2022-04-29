@@ -4,29 +4,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blind Signature</title>
-    <link rel="stylesheet" href="/public/index.css" />
+    <link rel="stylesheet" href="../public/index.css" />
     <script
       src="https://kit.fontawesome.com/256d252ac2.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <h1>Voting System</h1>
+    <div class="title">
+      <h1>Voting System Using Blind Signature</h1>
+    </div>
     <div class="container">
       <div class="candidates">
+        <h2>Whom do you wanna vote for?</h2>
         <form action="/action_page.php">
           <input type="checkbox" id="c1" name="c1" value="c1" />
-          <label for="c1"> Candidate 1</label><br />
+          <label for="c1">Mukesh (Vote for Democracy)</label><br />
           <input type="checkbox" id="c2" name="c2" value="c2" />
-          <label for="c2">Candidate 2</label><br />
+          <label for="c2">Rajesh (Vote for Literacy)</label><br />
           <input type="checkbox" id="c3" name="c3" value="c3" />
-          <label for="c3">Candidate 3</label><br /><br />
-          <input type="submit" value="Vote" />
+          <label for="c3">Suresh (Vote for Privacy)</label><br /><br />
+          <button type="submit">Cast you vote securely</button>
         </form>
       </div>
-      <div class="ballot">
-        <i class="fa fa-person-booth fa-10x"></i>
-      </div>
+      <!-- <div class="ballot">
+        <img src="../media/secureServer.svg" />
+      </div> -->
+      <img src="../media/secureServer.svg" />
     </div>
+    <div class="lastLine">Want to check Algorithm? Check Console log</div>
   </body>
 </html>
