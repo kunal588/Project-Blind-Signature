@@ -1,43 +1,59 @@
-@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap"); */
 
-body{
-    padding:20px;
-    font-family: Dosis;
+body {
+  padding: 20px;
+  /* font-family: Dosis; */
 }
-h1{
-    text-align: center;
-    font-size: 60px;
+.title {
 }
-
-.container{
-    height: 70%;
-    /* width: calc(100vw - 60px);
-    height: calc(100vh - 60px); */
-    display: grid;
-    grid-template-columns: 30% 50%;
-    justify-content: space-between;
-    align-content: center;
-    margin:auto;
+.title h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
 }
 
-.candidates{
-    display:flex;
-    flex-direction: column;
-    gap:10px;
+.container {
+  /* height: 70%;  */
+
+  display: flex;
+  flex-flow: row wrap;
+  /* grid-template-columns: 30% 50%; */
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 5%;
 }
 
-.candidates button{
-    height:30px;
+.candidates {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-/* button .candidates::after{
-    content: " ";
-    background-color: blue;
-    border:1px dashed black;
-} */
+.candidates h2 {
+  font-size: 30px;
+  font-weight: 200;
+}
 
-.ballot{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.candidates label {
+  font-size: 20px;
+  margin: 5px;
+  line-height: 25px;
+}
+
+.candidates button {
+  margin-top: 10px;
+  height: 50px;
+  font-size: 18px;
+}
+
+.container img {
+  width: 30%;
+}
+
+button input {
+}
+.lastLine {
+  margin-top: 5%;
+  font-size: 18px;
+  text-align: center;
 }
