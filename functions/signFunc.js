@@ -1,4 +1,4 @@
-import data from "../data/keydata.json";
+data = require("../data/keydata.json");
 const n = BigInt(data.n),
   d = BigInt(data.d);
 
