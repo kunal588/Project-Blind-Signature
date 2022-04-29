@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+
+body{
+    padding:20px;
+    font-family: Dosis;
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+.container{
+    height: 70%;
+    /* width: calc(100vw - 60px);
+    height: calc(100vh - 60px); */
+    display: grid;
+    grid-template-columns: 30% 50%;
+    justify-content: space-between;
+    align-content: center;
+    margin:auto;
+}
+
+.candidates{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.candidates button{
+    height:30px;
+}
+
+/* button .candidates::after{
+    content: " ";
+    background-color: blue;
+    border:1px dashed black;
+} */
+
+.ballot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
