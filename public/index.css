@@ -1,26 +1,25 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 
 body {
   padding: 20px;
-  /* font-family: Dosis; */
+  font-weight: 1000;
 }
 .title {
 }
 .title h1 {
   text-align: center;
   font-size: 40px;
-  font-weight: 300;
+  font-weight: 1800;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
-  /* height: 70%;  */
-
   display: flex;
   flex-flow: row wrap;
-  /* grid-template-columns: 30% 50%; */
   justify-content: space-between;
   align-content: center;
   margin-top: 5%;
+  font-family: "Montserrat", sans-serif;
 }
 
 .candidates {
@@ -31,7 +30,7 @@ body {
 
 .candidates h2 {
   font-size: 30px;
-  font-weight: 200;
+  font-weight: 1400;
 }
 
 .candidates label {
@@ -56,4 +55,82 @@ button input {
   margin-top: 5%;
   font-size: 18px;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+}
+
+.candidates button {
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #222;
+  padding: 17px 60px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 25px;
+}
+
+.candidates button span {
+  position: relative;
+  z-index: 1;
+}
+
+.candidates button:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: #6c63ff;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.candidates button:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.candidates button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.link {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.link a {
+  color: #000;
+  font-size: 25px;
+}
+
+.console ul {
+  list-style: none; /* Remove default bullets */
+  font-family: "Montserrat", sans-serif;
+
+  list-style-position: outside;
+}
+
+.console ul li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #6c63ff; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 0.5em; /* Also needed for space (tweak if needed) */
+  margin-bottom: 5px;
+  /* margin-left: -1em; Also needed for space (tweak if needed) */
+  transform: scale(5) translateY(-6%);
 }
