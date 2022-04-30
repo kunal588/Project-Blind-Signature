@@ -1,23 +1,27 @@
 data = require("../data/keydata.json");
-const n = BigInt(data.n),
-  d = BigInt(data.d);
+const n = data.n,
+	d = data.d;
+
+function inv(num) {
+	return mod_exp(num, data.phin, n);
+}
 
 function mod_exp(a, b, n) {
-  a = BigInt(a);
-  if (b === 0n) return 1n;
+	if (b === 0) return 1;
 
-  console.log(b);
-  let c = BigInt(mod_exp(a, b / 2n, n)),
-    ans = 1n;
+	let c = mod_exp(a, Math.floor(b / 2), n),
+		ans = 1;
 
-  if (b % 2n) ans = a;
+	if (b % 2) ans = a;
 
-  return (ans * ((c * c) % n)) % n;
+	return (ans * ((c * c) % n)) % n;
 }
 
 function blindSign(msg) {
-  let m = BigInt(msg);
-  return mod_exp(m, d, n);
+	let m = msg;
+	return mod_exp(m, d, n);
 }
 
-console.log(blindSign(56));
+// console.log(blindSign(56));
+
+module.exports = { blindSign, inv };
