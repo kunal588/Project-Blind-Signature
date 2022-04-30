@@ -2,14 +2,9 @@
 
 ## Introduction
 
-### RSA Algorithm in Cryptography
+### Blind Signature
 
-RSA algorithm is an asymmetric cryptography algorithm. Asymmetric actually means that it works on two different keys i.e. Public Key and Private Key. As the name describes, the Public Key is given to everyone and the Private key is kept private.
-An example of asymmetric cryptography :
-A client (for example browser) sends its public key to the server and requests for some data.
-The server encrypts the data using the client's public key and sends the encrypted data.
-Client receives this data and decrypts it.
-Since this is asymmetric, nobody else except the browser can decrypt the data even if a third party has the public key of the browser. The idea of RSA is based on the fact that it is difficult to factorise a large integer. The public key consists of two numbers where one number is multiplication of two large prime numbers. And private keys are also derived from the same two prime numbers. So if somebody can factorise the large number, the private key is compromised. Therefore encryption strength totally lies on the key size and if we double or triple the key size, the strength of encryption increases exponentially. RSA keys can be typically 1024 or 2048 bits long, but experts believe that 1024 bit keys could be broken in the near future. But till now it seems to be an infeasible task.
+Blind signature schemes provide a better way of achieving the sender’s privacy. These can be used to abide by certain rules like voting protocols, and digital money transaction policies. For example, in electronic voting systems first, the user needs to be verified that the voter is certified by an election authority to vote before it can be accepted for counting. In turn, this allows the authority to check the credentials of the voter to ensure that they are allowed to vote. Simultaneously, it is important that this authority does not learn the voter's selections. An unlinkable blind signature provides this guarantee, as the authority will not see the contents of any ballot it signs, and will be unable to link the blinded ballots it signs back to the un-blinded ballots it receives for counting.
 
 ### Team Members :-
 
