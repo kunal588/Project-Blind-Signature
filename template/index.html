@@ -1,45 +1,46 @@
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Blind Signature</title>
-		<link rel="stylesheet" href="/public/index.css" />
-		<script
-			src="https://kit.fontawesome.com/256d252ac2.js"
-			crossorigin="anonymous"
-		></script>
-	</head>
-	<body>
-		<div class="title">
-			<h1>Voting System Using Blind Signature</h1>
-		</div>
-		<div class="container">
-			<div class="candidates">
-				<h2>Whom do you wanna vote for?</h2>
-				<form id="form">
-					<input type="radio" id="Mukesh" name="Vote" value="c1" />
-					<label for="c1">Mukesh (Vote for Democracy)</label><br />
-					<input type="radio" id="Rajesh" name="Vote" value="c2" />
-					<label for="c2">Rajesh (Vote for Literacy)</label><br />
-					<input type="radio" id="Suresh" name="Vote" value="c3" />
-					<label for="c3">Suresh (Vote for Privacy)</label
-					><br /><br />
-					<button
-						type="submit"
-						onclick="onClick(event)"
-						id="submit-btn"
-					>
-						Cast you vote securely
-					</button>
-				</form>
-			</div>
-			<script src="/public/js/index.js"></script>
-			<img src="/public/media/secureServer.svg" />
-		</div>
-		<div class="lastLine">Want to check Algorithm? Check Console log</div>
-		<div class="console">
-			<ul id="console-list"></ul>
-		</div>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blind Signature</title>
+    <link rel="stylesheet" href="/public/index.css" />
+    <script
+      src="https://kit.fontawesome.com/256d252ac2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="title">
+      <h1>Voting System Using Blind Signature</h1>
+    </div>
+    <div class="container">
+      <div class="candidates">
+        <h2>Whom do you wanna vote for?</h2>
+        <form id="form">
+          <input type="radio" id="Mukesh" name="Vote" value="c1" />
+          <label for="c1">Mukesh </label><br />
+          <input type="radio" id="Rajesh" name="Vote" value="c2" />
+          <label for="c2">Rajesh </label><br />
+          <input type="radio" id="Suresh" name="Vote" value="c3" />
+          <label for="c3">Suresh </label><br />
+          <input type="radio" id="Ganesh" name="Vote" value="c4" />
+          <label for="c4">Ganesh </label><br />
+          <input type="radio" id="Brajesh" name="Vote" value="c5" />
+          <label for="c5">Brajesh </label><br />
+          <button type="submit" onclick="onClick(event)" id="submit-btn">
+            <span>Cast you vote securely</span>
+          </button>
+        </form>
+      </div>
+      <script src="/public/js/index.js"></script>
+      <img src="/public/media/secureServer.svg" />
+    </div>
+    <div class="lastLine">
+      Want to check Algorithm? Click Here (Project Report)
+    </div>
+    <div class="console">
+      <ul id="console-list"></ul>
+    </div>
+  </body>
 </html>
